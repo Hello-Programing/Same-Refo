@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body, div, p, a{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.top{
+  width: 100%;
+  margin: 50px auto;
+}
+.left{
+  display: inline-block;
+  width: 50%;
+  height:200px;
+  background-color: silver;
+  margin: 0 50px;
+}
+.right{
+  display: inline-block;
+  width: 20%;
+  height: 200px;
+  background-color: coral;
+}
+.contents{
+  width: 100%;
+}
+.contents a, p{
+  display: inline-block;
+  line-height: 100px;
+  color:#111212;
+  text-align: center;
+}
+.contents a{
+  width: 10%;
+  margin:30px 5%;
+  background-color: darkseagreen;
+}
+
+.contents p{
+  width: 30%;
+  margin: 0 5%;
+  background-color: lightsalmon;
+}
