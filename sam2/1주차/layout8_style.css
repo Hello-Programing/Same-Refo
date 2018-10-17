@@ -1,0 +1,67 @@
+@charset "uft-8";
+
+body,
+div,
+p,
+figure,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+figure {
+  width: 50%;
+  height: 660px;
+  display: inline-block;
+  margin-right: -4px;
+  overflow-y: hidden;
+}
+
+figure img {
+  width: 100%;
+}
+
+.p_wrap {
+  width: 50%;
+  float: right;
+}
+.p_wrap p{
+  width: 50%;
+  line-height: 218px;
+  display: inline-block;
+  margin-right: -4px;
+  border: 1px solid #cd3edc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.section{
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.square, .rect{
+  display: inline-block;
+}
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+}
+p.rect{
+  width: calc(100% - 110px);
+  height: 100px;
+  line-height: 1.4;
+  background-color: azure;
+  vertical-align: top;
+}
