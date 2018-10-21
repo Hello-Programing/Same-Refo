@@ -92,10 +92,18 @@
     <div class="mail">
       <ion-icon name="mail"></ion-icon>
       <p>Nulla occaecat cillum laborum eiusmod id proident velit do.</p>
-      <form>
+      <form enctype="multipart/form-data">
         <fieldset>
-          <input type="text">
-          <button type="submit">Subscribe</button>
+          <label for="text1">
+            메일주소
+          </label>
+          <label for="radio1">여자</label>
+          <input type="radio" id="radio1" name="gender">
+          <label for="radio2">남자</label>
+          <input type="radio" id="radio2" name="gender">
+          <input type="file" multiple="multiple">
+          <input type="submit" value="전송">
+         <button type="submit">Subscribe</button>
         </fieldset>
       </form>
     </div>
