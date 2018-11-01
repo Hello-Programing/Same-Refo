@@ -32,7 +32,7 @@
 .all_light{
   position: absolute;
   background-color: transparent;
-  animation: all_light 8s linear infinite;
+  /*animation: all_light 8s linear infinite;*/
 }
 .light1{
   background-color: red;
@@ -69,11 +69,26 @@
   background-color: #ddd;
   border-style: none;
 }
+/*
 .play:active .all_light{
   animation-play-state: running;
 }
 .pause:active .all_light{
   animation-play-state: paused;
+}
+*/
+#pos1:checked ~ .all_light{
+  background: black;
+  animation: all_light 8s linear infinite;
+}
+#pos2:checked ~ .all_light{
+  animation-play-state: paused;
+}
+.disnone{
+  display: none;
+}
+.labelBt{
+  cursor: pointer;
 }
 @keyframes light{
   0%{
