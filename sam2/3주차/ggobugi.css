@@ -145,6 +145,44 @@
     border-bottom-color: #000;
     border-bottom-width: 2px;
     border-bottom-style: solid; }
+  .mouth_wrap .m_inner_shadow {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    bottom: 65px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4; }
+    .mouth_wrap .m_inner_shadow::after {
+      position: absolute;
+      left: 21px;
+      top: 136px;
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      z-index: 6;
+      -webkit-box-shadow: 15px 36px 0 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 15px 36px 0 0 rgba(0, 0, 0, 0.5);
+      border-radius: 74%;
+      -webkit-transform: rotate(115deg);
+      -ms-transform: rotate(115deg);
+      transform: rotate(115deg); }
+    .mouth_wrap .m_inner_shadow::before {
+      position: absolute;
+      right: 19px;
+      top: 129px;
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      z-index: 6;
+      -webkit-box-shadow: 15px 36px 0 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 15px 36px 0 0 rgba(0, 0, 0, 0.5);
+      border-radius: 74%;
+      -webkit-transform: rotate(-66deg);
+      -ms-transform: rotate(-66deg);
+      transform: rotate(-66deg); }
   .mouth_wrap .m_left {
     position: absolute;
     top: 0;
