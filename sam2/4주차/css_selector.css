@@ -15,12 +15,6 @@ div[class^="part"] {
   font-size: 1.3em;
   font-weight: bold; }
 
-input[id*="slide"] {
-  display: none; }
-
-input:checked + div {
-  display: block; }
-
 div.content {
   position: absolute;
   top: 0;
@@ -51,10 +45,16 @@ div.content {
   .label_wrap label[for^="slide"] {
     display: inline-block;
     width: 50px;
-    height: 4px;
+    height: 8px;
     margin: 0 10px;
     background-color: cadetblue;
     cursor: pointer; }
+
+input[id*="slide"] {
+  display: none; }
+
+input:checked + div {
+  display: block; }
 
 .part2 q {
   display: block;
