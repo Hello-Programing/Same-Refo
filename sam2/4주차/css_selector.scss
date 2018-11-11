@@ -78,6 +78,9 @@ div.content {
   q{
     display: block;
     text-transform: capitalize;
+    &::before{
+      content: none;
+    }
     &::first-letter{
       font-size: 1.3em;
       color: blueviolet;

@@ -59,6 +59,8 @@ div.content {
 .part2 q {
   display: block;
   text-transform: capitalize; }
+  .part2 q::before {
+    content: none; }
   .part2 q::first-letter {
     font-size: 1.3em;
     color: blueviolet;
