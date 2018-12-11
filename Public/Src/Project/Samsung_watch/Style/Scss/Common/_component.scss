@@ -1,0 +1,32 @@
+@mixin pos_xy($pos, $pos_x, $pos_y) {
+  position: $pos;
+  top: $pos_y;
+  left: $pos_x;
+  transform: translate(-$pos_x, -$pos_y);
+  -ms-transform: translate(-$pos_x, -$pos_y);
+  -webkit-transform: translate(-$pos_x, -$pos_y);
+}
+
+@mixin pos_y($pos, $pos_y) {
+  position: $pos;
+  top: $pos_y;
+  transform: translateY(-$pos_y);
+  -ms-transform: translateY(-$pos_y);
+  -webkit-transform: translateY(-$pos_y);
+}
+
+@mixin nav_li_st ($ulClass) {
+  .#{$ulClass}>li {
+    text-transform: uppercase;
+    font-size: $nav_sub_fs;
+    font-weight: bold;
+  }
+}
+
+@mixin clear{
+  &:after{
+    display: block;
+    content:'';
+    clear: both;
+  }
+}

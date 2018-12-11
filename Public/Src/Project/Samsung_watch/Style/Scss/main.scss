@@ -1,0 +1,175 @@
+@import './Common/component';
+@import './Common/vari';
+
+a {
+  text-decoration: none;
+}
+
+.wrap{
+  width: 80%;
+  margin: auto;
+  @at-root &-nav{
+    width: 95%;
+    margin:auto;
+  }
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  a {
+    color: #fff;
+  }
+  z-index: 50;
+}
+.menu_top {
+  position: relative;
+  width: 100%;
+  border-bottom: 0.5px solid #666;
+  box-sizing: border-box;
+  height: 55px;
+}
+
+.logo{
+  font: {
+    size: $nav_fs;
+    weight: bold;
+  }
+  @include pos_y(absolute, 50%);
+  left:0;
+}
+h1{
+  font: {
+    size: $nav_fs;
+    weight: bold;
+  }
+  text-align: center;
+  color: #fff;
+  @include pos_xy(absolute, 50%, 50%);
+}
+
+.hamburger{
+  @include pos_y(absolute, 50%);
+  right: 0;
+  
+}
+.line{
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+.menu_bottom{
+  margin: auto;
+  padding: 10px 0;
+  overflow: hidden;
+  text-align: center;
+  @include nav_li_st(li_wrap);
+  .nav_wrap{
+    display: inline-block;
+    position: relative;
+  }
+  .li_wrap{
+    display: inline-block;
+    li{
+      float: left;
+      padding: 5px 10px;
+    }
+    @include clear;
+  }
+  .bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: (100% / 6);
+    height:4px;
+    background-color: #00b3e3;
+    transition: .3s
+  }
+}
+
+.section{
+  position: relative;
+  width: 100%;
+}
+.main{
+  margin-top: 99px;
+  background-color: #0093ad;
+  overflow: hidden;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.typo{
+  width: 50%;
+  position: relative;
+  .title, .s_sub_title{
+    color:#fff;
+  }
+  .title_wrap{
+    @include pos_xy(absolute, 50%, 50%)
+  }
+}
+.title{
+  font: {
+    size: $title_fs;
+    weight: bold;
+  }
+}
+.sub_title{
+  font: {
+    size:$sub_title_fs;
+    weight:bold;
+  }
+}
+.s_sub_title{
+  font: {
+    size:$s_sub_title_fs;
+    weight: bold;
+  }
+}
+.watch{
+  width: 50%;
+  @include clear;
+  img{
+    opacity: 1;
+  }
+}
+.watch-overview{
+  background-color: #000;
+  padding-top:100px;
+  .sub_title{
+    color:#fff;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .overview{
+    &-ani{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.watch-design{
+  sup{
+    vertical-align: super;
+    font-size: smaller;
+  }
+  .design img{
+    display: block;
+    width: 100%;
+  }
+}
