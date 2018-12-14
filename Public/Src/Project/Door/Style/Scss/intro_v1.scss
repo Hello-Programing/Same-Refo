@@ -1,12 +1,12 @@
-@import '../../Doc/Common/_component.scss';
-@import '../../Doc/Common/_vari.scss';
+@import '../Scss/Common/component';
+@import '../Scss/Common/_vari.scss';
 
 body {
   background-color: #111212;
 }
 
 .text {
-  @include tr_center(absolute, 50%, 50%);
+  // @include tr_center(absolute, 50%, 50%);
   width: 40em;
   text-align: center;
   padding: 50px 0;
@@ -25,7 +25,7 @@ body {
       weight: 200;
     }
 
-    color: $sub_cr;
+    // color: $sub_cr;
 
     &.upper {
       letter-spacing: 5px;
