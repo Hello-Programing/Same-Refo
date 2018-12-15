@@ -196,9 +196,16 @@ h1{
     vertical-align: super;
     font-size: smaller;
   }
-  .design img{
+  .design{
     display: block;
     width: 100%;
+    height: 470px;
+    background: {
+      image:url('./../Img/Page/galaxy-watch_silver_black_rosegold.jpg');
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
   }
   .title_wrap{
     display: block;
