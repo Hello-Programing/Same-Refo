@@ -1,8 +1,0 @@
-@mixin tr_center($pos, $pos_x, $pos_y) {
-  position: $pos;
-  top: $pos_y;
-  left: $pos_x;
-  transform: translate(-$pos_x, -$pos_y);
-  -ms-transform: translate(-$pos_x, -$pos_y);
-  -webkit-transform: translate(-$pos_x, -$pos_y);
-}
