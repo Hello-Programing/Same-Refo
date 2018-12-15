@@ -1,18 +1,58 @@
 @import './Common/component';
 @import './Common/vari';
 
+body{
+  font-family: 'Roboto', sans-serif;
+  
+}
 a {
   text-decoration: none;
 }
 
 .wrap{
-  width: 80%;
+  width: 1140px;
   margin: auto;
+  border: 1px solid #ff0000;
   @at-root &-nav{
     width: 95%;
     margin:auto;
   }
 }
+.title, .sub_title, .s_sub_title, .con_text{
+  margin: auto;
+}
+.title{
+  font: {
+    size: $title_fs;
+    weight: 700;
+  }
+}
+.sub_title{
+  font: {
+    size:$sub_title_fs;
+    weight:700;
+  }
+}
+.s_sub_title{
+  font: {
+    size:$s_sub_title_fs;
+    weight: 700;
+  }
+}
+.con_text{
+  font: {
+    size: $con_text_fs;
+    weight: 300;
+  }
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+// 각 요소별 CSS
 #header {
   position: fixed;
   top: 0;
@@ -79,7 +119,7 @@ h1{
     display: inline-block;
     li{
       float: left;
-      padding: 5px 10px;
+      padding: 5px 20px;
     }
     @include clear;
   }
@@ -99,64 +139,52 @@ h1{
   position: relative;
   width: 100%;
 }
-.main{
+.main{  
+  height: 770px;
   margin-top: 99px;
   background-color: #0093ad;
   overflow: hidden;
+  .alpha{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    img{
+      opacity: 0;
+    }
+  }
 }
-.left{
-  float: left;
-}
-.right{
-  float: right;
-}
+
 .typo{
-  width: 50%;
-  position: relative;
+  @include pos_xy(absolute, 35%, 45%);
   .title, .s_sub_title{
     color:#fff;
   }
-  .title_wrap{
-    @include pos_xy(absolute, 50%, 50%)
-  }
-}
-.title{
-  font: {
-    size: $title_fs;
-    weight: bold;
-  }
-}
-.sub_title{
-  font: {
-    size:$sub_title_fs;
-    weight:bold;
-  }
-}
-.s_sub_title{
-  font: {
-    size:$s_sub_title_fs;
-    weight: bold;
+  .s_sub_title{
+    padding-bottom: 20px;
   }
 }
 .watch{
   width: 50%;
+  &.right{
   @include clear;
+}
   img{
     opacity: 1;
   }
 }
 .watch-overview{
   background-color: #000;
-  padding-top:100px;
+  padding-top: 100px;
   .sub_title{
     color:#fff;
-    width: 60%;
-    margin: auto;
     text-align: center;
     padding-bottom: 50px;
   }
   .overview{
-    &-ani{
+    &-video{
+      width: 100%;
+    }
+    &-anistate{
       display: block;
       width: 100%;
     }
@@ -171,5 +199,30 @@ h1{
   .design img{
     display: block;
     width: 100%;
+  }
+  .title_wrap{
+    display: block;
+    margin: auto;
+    padding: 200px 0 100px;
+    text-align:center;
+    .title:first-child{
+      &:after{
+        display: block;
+        width: 50px;
+        padding-top: 20px;
+        margin: auto;
+        border-bottom:5px solid #000;
+        content: '';
+      }
+    }
+    .title:nth-child(2){
+      width: 60%;
+      padding: 150px 0 50px;
+    }
+    .con_text{
+      width: 55%;
+      margin: auto;
+      line-height: 1.3;
+    }
   }
 }
