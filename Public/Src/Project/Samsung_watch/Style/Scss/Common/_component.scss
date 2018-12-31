@@ -30,3 +30,9 @@
     clear: both;
   }
 }
+@mixin title_wrap($w){
+  display: block;
+  margin: auto;
+  text-align:center;
+  width: $w;
+}
