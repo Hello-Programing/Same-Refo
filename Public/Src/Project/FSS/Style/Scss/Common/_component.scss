@@ -5,3 +5,14 @@
     content: '';
   }
 }
+@mixin pos_center($pos:absolute,$top:50%,$left:50%){
+  position: $pos;
+  top: $top;
+  left: $left;
+  transform: translate(-$left, -$top);
+  -webkit-transform: translate(-$left, -$top);
+}
+
+@mixin column ($count:2){
+  column-count: $count;
+}
