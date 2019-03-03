@@ -2,7 +2,7 @@
 name: Sohee issue template
 about: Project development artifact templates.
 title: "[Learn] "
-labels: question, learn
+labels: learn, question
 assignees: Phantom05, SoheeP
 
 ---
@@ -16,7 +16,9 @@ assignees: Phantom05, SoheeP
 ## 스크린샷
 
 ## 시도해본 코드
-+ 
+```js
+
+``` 
 
 ## 실행환경
 <kbd>OS</kbd>
